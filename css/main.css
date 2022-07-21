@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+position: relative;
+width: 450px;
+height: 225px;
+border: 1px solid #ccc;
+overflow: hidden;
+margin: 0 auto;
+}
+#sprite{
+    position: relative;
+    width: 900px;
+    height: 225px;
+    animation: dogrun 0.8s infinite steps(8);
+    transform: translateX(0);
+}
+@keyframes dogrun {
+    100%{
+        transform: translateX(-3600px);
+    }
+}
+#img-01{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#img-02{
+    position: absolute;
+    top: -225px;
+    left: 900px;
+}
+#img-03{
+    position: absolute;
+    top: -450px;
+    left: 1800px;
+}
+#img-04{
+    position: absolute;
+    top: -675px;
+    left: 2700px;
+}
